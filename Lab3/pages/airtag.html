@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apple AirTag</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      }
+
+      body {
+        background: #f5f5f7;
+        color: #1d1d1f;
+        overflow-x: hidden;
+      }
+
+      nav {
+        background: #fff;
+        padding: 18px 8%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+      }
+
+      .logo {
+        font-size: 28px;
+        font-weight: 700;
+      }
+
+      nav ul {
+        list-style: none;
+        display: flex;
+        gap: 30px;
+      }
+
+      nav a {
+        text-decoration: none;
+        color: #1d1d1f;
+        font-weight: 500;
+      }
+
+      .hero {
+        min-height: 90vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 60px;
+        padding: 80px 8%;
+      }
+
+      .hero-content {
+        flex: 1;
+      }
+
+      .hero-content h1 {
+        font-size: 5rem;
+        line-height: 1;
+        margin-bottom: 20px;
+      }
+
+      .hero-content p {
+        font-size: 1.3rem;
+        color: #6e6e73;
+        margin-bottom: 30px;
+        max-width: 550px;
+      }
+
+      .btn {
+        display: inline-block;
+        padding: 14px 32px;
+        background: #0071e3;
+        color: white;
+        text-decoration: none;
+        border-radius: 30px;
+        font-weight: 600;
+        transition: 0.3s;
+      }
+
+      .btn:hover {
+        background: #0059b8;
+      }
+
+      .hero-image {
+        flex: 1;
+        text-align: center;
+      }
+
+      .hero-image img {
+        width: 100%;
+        max-width: 500px;
+        transition: 0.4s;
+      }
+
+      .hero-image img:hover {
+        transform: scale(1.05);
+      }
+
+      .features {
+        padding: 100px 8%;
+        background: white;
+      }
+
+      .section-title {
+        text-align: center;
+        font-size: 3rem;
+        margin-bottom: 60px;
+      }
+
+      .feature-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 30px;
+      }
+
+      .card {
+        background: #f5f5f7;
+        padding: 40px;
+        border-radius: 25px;
+        text-align: center;
+        transition: 0.3s;
+      }
+
+      .card:hover {
+        transform: translateY(-8px);
+      }
+
+      .card h3 {
+        margin-bottom: 15px;
+        font-size: 1.5rem;
+      }
+
+      .card p {
+        color: #6e6e73;
+        line-height: 1.6;
+      }
+
+      .showcase {
+        padding: 100px 8%;
+        display: flex;
+        align-items: center;
+        gap: 60px;
+      }
+
+      .showcase img {
+        width: 100%;
+        max-width: 500px;
+      }
+
+      .showcase-content h2 {
+        font-size: 3rem;
+        margin-bottom: 20px;
+      }
+
+      .showcase-content p {
+        color: #6e6e73;
+        font-size: 1.1rem;
+        line-height: 1.8;
+      }
+
+      .pricing {
+        background: white;
+        text-align: center;
+        padding: 100px 8%;
+      }
+
+      .price {
+        font-size: 4rem;
+        font-weight: 700;
+        margin: 20px 0;
+      }
+
+      footer {
+        background: #1d1d1f;
+        color: white;
+        text-align: center;
+        padding: 40px;
+      }
+
+      @media (max-width: 900px) {
+        .hero,
+        .showcase {
+          flex-direction: column;
+          text-align: center;
+        }
+
+        .hero-content h1 {
+          font-size: 3.5rem;
+        }
+
+        nav ul {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav>
+      <div class="logo"> AirTag</div>
+      <ul>
+        <li><a href="#">Overview</a></li>
+        <li><a href="#">Features</a></li>
+        <li><a href="#">Find My</a></li>
+        <li><a href="#">Buy</a></li>
+      </ul>
+    </nav>
+
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Lose your knack for losing things.</h1>
+        <p>
+          AirTag is the super easy way to keep track of and find your keys,
+          wallet, luggage, backpack and more using the Find My app.
+        </p>
+        <a href="#" class="btn">Buy AirTag</a>
+      </div>
+
+      <div class="hero-image">
+        <img
+          src="https://images.unsplash.com/photo-1583394838336-acd977736f90?w=800"
+          alt="AirTag"
+        />
+      </div>
+    </section>
+
+    <section class="features">
+      <h2 class="section-title">Why AirTag?</h2>
+
+      <div class="feature-grid">
+        <div class="card">
+          <h3>Precision Finding</h3>
+          <p>
+            Find nearby items with incredible accuracy using Ultra Wideband
+            technology.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Find My Network</h3>
+          <p>
+            Leverage hundreds of millions of Apple devices to help locate your
+            lost items.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Water Resistant</h3>
+          <p>
+            Built to travel everywhere with an IP67 water and dust resistance
+            rating.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Long Battery Life</h3>
+          <p>
+            Replaceable battery lasts over a year, keeping your belongings
+            protected.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="showcase">
+      <img
+        src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800"
+        alt="Luggage Tracking"
+      />
+
+      <div class="showcase-content">
+        <h2>Track your belongings anywhere.</h2>
+        <p>
+          Attach AirTag to your keys, backpack, luggage, or wallet. If it's
+          misplaced, use the Find My app to locate it quickly. When it's farther
+          away, the Find My network helps you track it securely and privately.
+        </p>
+      </div>
+    </section>
+
+    <section class="pricing">
+      <h2>AirTag</h2>
+      <div class="price">₹3,490</div>
+      <p>Starting price. Personalization available for free.</p>
+      <br /><br />
+      <a href="#" class="btn">Order Now</a>
+    </section>
+
+    <footer>
+      <p>© 2026 Apple AirTag Landing Page Concept</p>
+    </footer>
+  </body>
+</html>

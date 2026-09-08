@@ -5,7 +5,11 @@
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
+<<<<<<< HEAD
     "dev": "nodemon prg8.js"
+=======
+    "dev": "nodemon prg11.js"
+>>>>>>> other-repo/main
   },
   "keywords": [],
   "author": "",
